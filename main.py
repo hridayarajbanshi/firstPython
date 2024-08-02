@@ -8,5 +8,5 @@ if(a < b):
     print("B is greater", b)
 elif(b < c):
     print("C is greater", c)
-else:
+elif(c<a):
     print("A is greater", a)
