@@ -1,4 +1,12 @@
-name = 'hriodaya'
-print("My name is " + name)
-name2 = input("Enter your name: ")
-print("Your name is " + name2)
+
+
+#program to ask 3 numbers and print the greatest number 
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+c = int(input("Enter the third number: "))
+if(a < b):
+    print("B is greater", b)
+elif(b < c):
+    print("C is greater", c)
+else:
+    print("A is greater", a)
