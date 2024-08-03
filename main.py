@@ -3,19 +3,27 @@ a = int(input("Enter the first number: "))
 b = int(input("Enter the second number: "))
 op = input("Enter the operator: ")
 def sum(a,b):
-    if(op == '+'):
-     return a+b
+   
+    return a+b
 def sub(a,b):
-   if(op == "-"): 
+
     return a-b
 def mul(a,b):
-    if(op == "*"):
+  
      return a*b
 def div(a,b):
-    if(op == "/"):
      return a/b
 
-print(sum(a,b))
+if(op=="+"):
+    print(sum(a,b))
+elif(op=="-"):
+    print(sub(a,b))
+elif(op=="*"):
+    print(mul(a,b))
+elif(op=="/"):
+    print(div(a,b))
+else:
+    print("Invalid operator")
 
 
 
