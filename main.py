@@ -1,4 +1,3 @@
-
 a = int(input("Enter the first number: "))
 b = int(input("Enter the second number: "))
 op = input("Enter the operator: ")
@@ -29,10 +28,41 @@ def add(*args):
     for i in args:
         sum += i
     return sum
-print(add(1,2,3,4,5,6,7,8,9,10))
+print(add(1,2,3))
 
 
 
+
+def person(first=None, middle= "anal", last = None):
+    if first and middle and last: 
+        print(f"{first} {middle} {last}")
+    elif first and last:
+        print(f"{first} {last}")
+    
+print(person(first="ram", last="hari"))
+balance = 5033
+operation = input("Enter the operation:")
+
+if operation == "debit":
+    def debit():
+     amount = int(input("Enter the amount to debit:"))
+     balance -= amount
+     print("Your current balance:", balance)
+elif operation == "credit":
+    def credit(amt):
+     print("Your current balance:", balance)
+     input(int("Enter the amount to credit:", amt))
+     balance += amt
+elif operation == "check_balance":
+    def check_balance():
+     print("Your current balance:", balance)
+     return balance
+
+
+
+
+
+    
 #program to ask 3 numbers and print the greatest number 
 # a = int(input("Enter the first number: "))
 # b = int(input("Enter the second number: "))
