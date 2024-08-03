@@ -3,7 +3,6 @@ a = int(input("Enter the first number: "))
 b = int(input("Enter the second number: "))
 op = input("Enter the operator: ")
 def sum(a,b):
-   
     return a+b
 def sub(a,b):
 
@@ -25,7 +24,12 @@ elif(op=="/"):
 else:
     print("Invalid operator")
 
-
+def add(*args):
+    sum = 0
+    for i in args:
+        sum += i
+    return sum
+print(add(1,2,3,4,5,6,7,8,9,10))
 
 
 
