@@ -68,7 +68,7 @@ for i in range(3):
          "age": age,
          "gender": gender
       }
-    list.append(student)
+    list.append(student.get('name'))
 print(list)
 
 #program to ask 3 numbers and print the greatest number 
