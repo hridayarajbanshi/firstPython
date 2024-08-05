@@ -4,7 +4,9 @@ def div(a,b):
     except:
         print("chal bhak bodsadike")
         res = None
-        
 
 
-print(div(2,0))
+
+print(div(2,"hellop"))
+
+

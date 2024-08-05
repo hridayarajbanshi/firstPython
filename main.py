@@ -49,33 +49,45 @@
 
 
 #key mapping 
-person ={
-    "name": 'alex',
-    "age": 34
-}
-print(f"{person["name"]} and his age is {person["age"]}")
-print(person.get("name"))
+# person ={
+#     "name": 'alex',
+#     "age": 34
+# }
+# print(f"{person["name"]} and his age is {person["age"]}")
+# print(person.get("name"))
 
-#ask the name age gender of 3 student
+# #ask the name age gender of 3 student
 
-list = []
-for i in range(3):
-    name = input("Enter the name:")
-    age = input("Enter the age: ")
-    gender = input("Enter the gender: ")
-    student = {
-         "name": name,
-         "age": age,
-         "gender": gender
-      }
-    list.append(student)
-for student in list:
-    print(student['name'])
-    print(student['age'])
-    print(student['gender'])
+# list = []
+# for i in range(3):
+#     name = input("Enter the name:")
+#     age = input("Enter the age: ")
+#     gender = input("Enter the gender: ")
+#     student = {
+#          "name": name,
+#          "age": age,
+#          "gender": gender
+#       }
+#     list.append(student)
+# for student in list:
+#     print(student['name'])
+#     print(student['age'])
+#     print(student['gender'])
 
 
+#classes
+class Student():
+    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print(f"Hello my name is {self.name} and i am {self.age} years old")
+    def intro(self):
+        pass 
 
+
+stu2 = Student(name= "Shyam", age = 30)
+stu2.intro()
 #program to ask 3 numbers and print the greatest number 
 # a = int(input("Enter the first number: "))
 # b = int(input("Enter the second number: "))
