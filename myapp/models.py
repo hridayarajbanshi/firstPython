@@ -17,12 +17,11 @@ class User(models.Model):
 class Customer(models.Model):
     name = models.CharField(max_length = 50)
     email = models.EmailField()
-    phone = models.IntegerField()
-    address = models.TextField()
+    phone = models.CharField(max_length = 10, null = False, blank = True)
+    address = models.CharField(max_length=100)
     gender = models.CharField(max_length = 50)
     created_at = models.DateTimeField(auto_now_add=True)
 
 
     def __str__(self):
-        return self.name
-    
+        return self.email
