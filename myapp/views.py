@@ -4,4 +4,5 @@ from django.shortcuts import render
 def index(req):
     return render(req, "appIndex.html")
 def studentList(req):
+        
     return render(req, "studentList.html")
