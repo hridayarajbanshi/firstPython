@@ -23,6 +23,7 @@ def indexView(req):
         "name": "Harry",
         "age": 24, 
         "hobbies": ["coding", "reading", "gaming"],
+        "is_male": True
     
     }
     return render(req, "index.html", data)

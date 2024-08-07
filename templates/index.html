@@ -105,6 +105,14 @@
                 <li>{{hobby }}</li>
                 {% endfor %}
             </ul>
+            <h1>
+                {% if is_male == True %}
+                You are male
+                {% else %}
+                You are female
+                {% endif %}
+    
+            </h1>
         </div>
     </div>
 
@@ -123,10 +131,7 @@
         <p>Feel free to reach out to us for any inquiries.</p>
     </div>
 
-    <div class="footer">
-        &copy; 2024 MyWebsite. All rights reserved.
-    </div>
-
+  
     <script>
         function scrollToSection(id) {
             const section = document.getElementById(id);
