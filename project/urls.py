@@ -19,7 +19,13 @@ from django.urls import path
 from django.shortcuts import HttpResponse, render
 def indexView(req):
     # return HttpResponse("<h1>Welcome to my homepage.")
-    return render(req, "index.html", {"name":"Naruto"})
+    data = { 
+        "name": "Harry",
+        "age": 24, 
+        "hobbies": ["coding", "reading", "gaming"],
+    
+    }
+    return render(req, "index.html", data)
 
 def loginPage(req):
    return render(req, "login.html")
