@@ -6,6 +6,7 @@ urlpatterns = [
     path('create/', studentCreate),
     path('delete/<int:id>/', listDelete),
     path('update/<int:id>/', listUpdate),
+     path('doners/', BloodReqView)
 ]
 
 

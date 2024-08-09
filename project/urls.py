@@ -7,8 +7,8 @@ urlpatterns = [
     path('', indexView), 
     path("login/", loginPage),
     path('', include('myapp.urls')),
-    path('register/', registerPage)
-
+    path('register/', registerPage),
+   
 ]
 
     

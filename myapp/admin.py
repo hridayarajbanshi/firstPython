@@ -7,3 +7,6 @@ admin.site.register(User)
 from myapp.models import Customer
 
 admin.site.register(Customer)
+
+from myapp.models import BloodReq
+admin.site.register(BloodReq)

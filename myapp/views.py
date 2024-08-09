@@ -1,5 +1,7 @@
 from django.shortcuts import render,redirect
-from .models import Customer
+from .models import Customer, BloodReq
+from .forms import CustomerForm
+
 # Create your views here.
 def index(req):
     return render(req, "appIndex.html")
@@ -36,3 +38,12 @@ def studentCreate(request):
             return redirect("/studentList")
     data = {'form': form}
     return render(request, "studentCreate.html", data)
+
+
+def BloodReqView(req):
+    doner = BloodReq.objects.all()
+    data = {
+        "doners": doner,
+        
+    }
+    return render(req, "doners.html")

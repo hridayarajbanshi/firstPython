@@ -25,3 +25,26 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class BloodReq(models.Model):
+    title = models.CharField(max_length = 50) 
+  
+    bloodChoice = (
+        ('A+', 'A+'),
+        ('A-', 'A-'),
+        ('B+', 'B+'),
+        ('B-', 'B-'),
+        ('AB+', 'AB+'),
+        ('AB-', 'AB-'),
+        ('O+', 'O+'),
+        ('O-', 'O-'),
+    )
+    bloodGroup = models.CharField(choices=bloodChoice, max_length = 10) 
+    hospitalName = models.CharField(max_length = 50)
+    location = models.CharField(max_length = 50)
+    date = models.DateField()
+
+
+    def __str__(self):
+        return self.title
