@@ -41,9 +41,9 @@ def studentCreate(request):
 
 
 def BloodReqView(req):
-    doner = BloodReq.objects.all()
+    doner = BloodReq.objects.filter()
     data = {
         "doners": doner,
         
     }
-    return render(req, "doners.html")
+    return render(req, "doners.html", data)
